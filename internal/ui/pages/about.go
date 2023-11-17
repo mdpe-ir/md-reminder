@@ -2,7 +2,6 @@ package pages
 
 import (
 	"github.com/mdpe-ir/md-reminder/internal/constants"
-	"github.com/mdpe-ir/md-reminder/internal/utils"
 	"github.com/ncruces/zenity"
 )
 
@@ -14,9 +13,7 @@ func ShowAbout() {
 		"Published: " + constants.PublishDate + "\n\n"
 
 	zenity.Info(aboutTxt,
-		zenity.OKLabel("Github"),
 		zenity.Title("About"),
 		zenity.InfoIcon)
 
-	utils.UrlOpen("https://github.com/mdpe-ir/md-reminder")
 }
